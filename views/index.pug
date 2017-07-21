@@ -1,0 +1,45 @@
+html
+  head
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel='stylesheet', href='/style.css')
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+    title File Metadata Microservice
+  body
+    div.jumbotron
+      div.container
+        h1 File Metadata Microservice
+    div.container
+      h2 User stories:
+      ul
+        li I can submit a FormData object that includes a file upload.
+        li When I submit something, I will receive the file size in bytes within the JSON response
+
+    div.container
+
+      div.col-lg-12
+        h3 Submit A File:
+        form(action='file', method='post', enctype="multipart/form-data")
+                    div.box-row
+                        input.btn.btn-default(type="file" name="files")
+                        button.btn.btn-primary(type="submit")
+                          h6 Submit
+
+    div.container
+      div.col-lg-12
+        h3 Example Result:
+        div.row#code
+          code { "name" : "file1.pdf", "size" : 40185 }
+
+    div.container
+      footer
+        div.row
+          div.col-sm-6.text-right.innerfooter
+            p Developed by Arnaldo Quintero.
+          div.col-sm-6.innerfooter
+            a(href='https://twitter.com/kutuplaa',target='_blank')
+              i.fa.fa-twitter-square.fa-2x
+            a(href='https://github.com/arnaldopxm', target='_blank')
+              i.fa.fa-github.fa-2x
+            a(href='https://ve.linkedin.com/in/arnaldo-quintero-segura-306750124',target='_blank')
+              i.fa.fa-linkedin-square.fa-2x

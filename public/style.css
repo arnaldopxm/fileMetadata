@@ -1,0 +1,20 @@
+button {
+  margin: 5px;
+}
+ul {
+  font-size: 150%;
+}
+footer {
+  background-color: #EEEEEE;
+  border-radius:5px;
+}
+.innerfooter {
+  margin-top: 2px;
+}
+p {
+  margin-top: 3px;
+}
+#code {
+  margin:10px;
+  font-size:120%;
+}
